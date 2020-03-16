@@ -7,7 +7,7 @@ PORT = 1234        # The port used by the server
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
     
-    student_id = '123'
+    student_id = '1'
     send_data = bytes(student_id, 'utf-8')
 
     s.sendall(send_data)
